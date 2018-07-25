@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer1"
+        android:id="@+id/Answer1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="playerChoose1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer2"
+        android:id="@+id/Answer2"
+        android:layout_below="@+id/Answer1"
+        android:layout_alignRight="@+id/Answer1"
+        android:layout_alignEnd="@+id/Answer1"
+        android:onClick="playerChoose2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer3"
+        android:id="@+id/Answer3"
+        android:layout_below="@+id/Answer2"
+        android:layout_alignRight="@+id/Answer2"
+        android:layout_alignEnd="@+id/Answer2"
+        android:onClick="playerChoose3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer4"
+        android:id="@+id/Answer4"
+        android:layout_below="@+id/Answer3"
+        android:layout_alignRight="@+id/Answer3"
+        android:layout_alignEnd="@+id/Answer3"
+        android:onClick="playerChoose4"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/theFlag"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/israel"    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score: 0"
+        android:id="@+id/Score"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="timer: 00:00"
+        android:id="@+id/timer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
